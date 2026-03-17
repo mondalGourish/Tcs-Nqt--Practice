@@ -119,3 +119,69 @@ public class arrayBasics{
     
 //   }
 // }
+
+//reverse an array
+// Input: [1,2,3,4]
+// Output: [4,3,2,1]
+// import java.util.*;
+// public class arrayBasics{
+//   public static void reverseArray(int arr[]){
+//     int left = 0;
+//     int right = arr.length-1;
+//     while(left<right){
+//       int temp = arr[left];
+//       arr[left] = arr[right];
+//       arr[right] = temp;
+//       left++;
+//       right--;
+//     }
+//     for(int i=0; i<arr.length; i++){
+//       System.out.print(arr[i]+" ");
+//     }
+//   }
+  
+  
+  
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//     int arr[] = new int[n];
+//     for(int i=0; i<arr.length; i++){
+//       arr[i] = sc.nextInt();
+//     }
+//     reverseArray(arr);
+    
+//   }
+// }
+
+//second largest in an array
+// Input: [10, 20, 4, 45, 99]
+// Output: 45
+// import java.util.*;
+// public class arrayBasics{
+//   public static void secondLargest(int arr[]){
+//     int largest = Integer.MIN_VALUE;
+//     int secLargest = Integer.MIN_VALUE;
+//     for(int i=0; i<arr.length; i++){
+//       if(arr[i]>largest){
+//         secLargest = largest;
+//         largest = arr[i];
+//       }else if(arr[i]>secLargest && arr[i] != largest){
+//         secLargest = arr[i];
+//       }
+//     }
+//     System.out.println(largest);
+//     System.out.println(secLargest);
+//   }
+  
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//     int arr[] = new int[n];
+//     for(int i=0; i<arr.length; i++){
+//       arr[i] = sc.nextInt();
+//     }
+//     secondLargest(arr);
+    
+//   }
+// }
