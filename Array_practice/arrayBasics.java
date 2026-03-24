@@ -191,19 +191,19 @@ public class arrayBasics{
 // Output: [1,2,3]
 // import java.util.*;
 // public class arrayBasics{
-//   //it takes O(n2) time and O(n) space
-//   // public static ArrayList<Integer> removeDuplicates(int arr[]){
-//   //   ArrayList<Integer> list = new ArrayList<>();
-//   //   for(int i=0; i<arr.length; i++){
-//   //     if(!list.contains(arr[i])){
-//   //       list.add(arr[i]);
-//   //     }
-//   //   }
-//   //   return list;
-//   // }
+  //it takes O(n2) time and O(n) space
+  // public static ArrayList<Integer> removeDuplicates(int arr[]){
+  //   ArrayList<Integer> list = new ArrayList<>();
+  //   for(int i=0; i<arr.length; i++){
+  //     if(!list.contains(arr[i])){
+  //       list.add(arr[i]);
+  //     }
+  //   }
+  //   return list;
+  // }
   
-//   //two pointer approach which takes O(n) time and O(1) space
-//   //best for sorted array
+  //two pointer approach which takes O(n) time and O(1) space
+  //best for sorted array
 //   public static int removeDuplicates(int arr[]){
 //     int j=0;
 //     for(int i=1; i<arr.length; i++){
@@ -215,20 +215,20 @@ public class arrayBasics{
 //     return j+1;
 //   }
   
-//   //for unsorted array use hashset
-// //   public static ArrayList<Integer> removeDuplicates(int arr[]) {
-// //     HashSet<Integer> set = new HashSet<>();
-// //     ArrayList<Integer> result = new ArrayList<>();
+  //for unsorted array use hashset
+//   public static ArrayList<Integer> removeDuplicates(int arr[]) {
+//     HashSet<Integer> set = new HashSet<>();
+//     ArrayList<Integer> result = new ArrayList<>();
 
-// //     for(int i = 0; i < arr.length; i++) {
-// //         if(!set.contains(arr[i])) {
-// //             set.add(arr[i]);
-// //             result.add(arr[i]);
-// //         }
-// //     }
+//     for(int i = 0; i < arr.length; i++) {
+//         if(!set.contains(arr[i])) {
+//             set.add(arr[i]);
+//             result.add(arr[i]);
+//         }
+//     }
 
-// //     return result;
-// // }
+//     return result;
+// }
 //   public static void main(String args[]){
 //     Scanner sc = new Scanner(System.in);
 //     int n = sc.nextInt();
