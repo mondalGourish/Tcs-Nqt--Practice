@@ -202,8 +202,8 @@ public class arrayBasics{
   //   return list;
   // }
   
-  //two pointer approach which takes O(n) time and O(1) space
-  //best for sorted array
+//two pointer approach which takes O(n) time and O(1) space
+//best for sorted array
 //   public static int removeDuplicates(int arr[]){
 //     int j=0;
 //     for(int i=1; i<arr.length; i++){
@@ -215,7 +215,7 @@ public class arrayBasics{
 //     return j+1;
 //   }
   
-  //for unsorted array use hashset
+//for unsorted array use hashset
 //   public static ArrayList<Integer> removeDuplicates(int arr[]) {
 //     HashSet<Integer> set = new HashSet<>();
 //     ArrayList<Integer> result = new ArrayList<>();
@@ -241,5 +241,97 @@ public class arrayBasics{
 //       System.out.print(arr[i]+" ");
 //     }
     
+//   }
+// }
+
+//count the frequency of elmenets
+// import java.util.*;
+// public class basics{
+//   public static void countFrequency(int arr[]){
+//     HashMap<Integer,Integer> map = new HashMap<>();
+    
+//     for(int i=0; i<arr.length; i++){
+//       map.put(arr[i], map.getOrDefault(arr[i],0)+1);
+//     }
+    
+//     for(Map.Entry<Integer,Integer> entry: map.entrySet()){
+//       System.out.println(entry.getKey()+" "+entry.getValue());
+//     }
+//   }
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//     int arr[] = new int[n];
+//     for(int i=0; i<n; i++){
+//       arr[i] = sc.nextInt();
+//     }
+//     countFrequency(arr);
+//   }
+// }
+
+////Rearrange array in increasing-decreasing order
+//Input: [4 2 8 6 15 5 9 20]
+//Output: [2 4 5 6 20 15 9 8]
+
+
+// import java.util.*;
+// public class basics{
+//   public static void sort(int arr[]){
+//     for(int i=0; i<arr.length-1; i++){
+//       for(int j=0; j<arr.length-i-1; j++){
+//         if(arr[j]>arr[j+1]){
+//           int temp = arr[j];
+//           arr[j] = arr[j+1];
+//           arr[j+1] = temp;
+//         }
+//       }
+//     }
+//   }
+//   public static void sortIncreasingDecreasing(int arr[]){
+//     int n = arr.length;
+//     sort(arr);
+//     int left = n/2; 
+//     int right = n-1;
+//     while(left<right){
+//       int temp = arr[right];
+//       arr[right] = arr[left];
+//       arr[left] = temp;
+//       left++;
+//       right--;
+//     }
+//     for(int i=0; i<n; i++){
+//       System.out.print(arr[i]+" ");
+//     }
+//   }
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//     int arr[] = new int[n];
+//     for(int i=0; i<n; i++){
+//       arr[i] = sc.nextInt();
+//     }
+//     sortIncreasingDecreasing(arr);
+//   }
+// }
+
+//sum of array elements
+// import java.util.*;
+// public class basics{
+//   public static void sumOfArr(int arr[]){
+//     int sum = 0;
+//     for(int i=0; i<arr.length; i++){
+//       sum += arr[i];
+//     }
+//     System.out.print(sum);
+//   }
+  
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//     int arr[] = new int[n];
+//     for(int i=0; i<n; i++){
+//       arr[i] = sc.nextInt();
+//     }
+//     sumOfArr(arr);
 //   }
 // }
